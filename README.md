@@ -25,6 +25,7 @@ ADSR controls, and a preamp. But for now, the code is designed for simple MIDI-i
   This project is built on the Arduino MIDI and Mozzi libraries and they must be already added to your Arduino IDE library. 
 Find them here:
       https://github.com/FortySevenEffects/arduino_midi_library/releases/tag/5.0.2
+      
       https://github.com/sensorium/Mozzi
   
   It also uses custom wavetable files for Mozzi that I made using Adventure Kid's NES waveforms. Download them from the
