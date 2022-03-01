@@ -43,7 +43,7 @@ best compromise.
 ADSR controls, and a preamp. But for now, the code is designed for simple MIDI-in and audio out circuitry.
 
 # Special Thanks
-Special thanks to thrash80 for their inspiring mGB and ArduinoBoy projects and to Adventure Kid for their NES waveforms.
+Special thanks to trash80 for their inspiring mGB and ArduinoBoy projects and to Adventure Kid for their NES waveforms.
 
 Also special thanks to jidagraphy for their Mozzi Poly Synth code which helped me create the three note polyphony channel 
 within the context of the Mozzi library. Without them, this project could not have been realized.
