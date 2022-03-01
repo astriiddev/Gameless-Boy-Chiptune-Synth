@@ -15,7 +15,11 @@ and pulse waves together as three note polyphony.
 
   ArduiNES is complete with pitch vibrato and pitch bend. Vibrato intensity is controlled by the mod wheel while its speed
 is controlled by CC knob 47 by default. Pitch bend is controlled by, obviously, the pitch bend wheel and have an octave up
-and octave down range. 
+and octave down range. When in polyphony mode, pitch bend will only bend the last note that was played. This is an issue
+that I hope to rectify in later releases.
+
+  I hope to eventually build this into a full enclosure, complete with push-buttons to change the duty cycles, knobs for
+ADSR controls, and a preamp. But for now, the code is designed for simple MIDI-in and audio out circuitry.
 
 # Installation
   This project is built on the Arduino MIDI and Mozzi libraries and they must be already added to your Arduino IDE library. 
@@ -26,21 +30,6 @@ Find them here:
   It also uses custom wavetable files for Mozzi that I made using Adventure Kid's NES waveforms. Download them from the
 tables folder in this project and place them in the Mozzi tables folder (should be Arduino\libraries\Mozzi-master\tables
 on your computer).
-
-# Known Issues
-  When in polyphony mode, pitch bend will only bend the last note that was played. This is an issue that I hope to rectify
-in later releases.
-
-  I've noticed that the ArduiNES can't handle incredibly fast signals MIDI signals. When using the arpeggiator/sequencer
-that's built into my Keystep 37, I can't go any faster than 32nd triplet notes at 200 bpm without the sound becoming unstable.
-While that should be plenty fast for most arpeggios and sequences, it also applies to rapidly changing CC knobs. The Duty
-Cycle control change must be turned smoothly, too fast and it won't register the value change and will just stay on the duty
-cycle that it was already set on. This can be fixed by increasing the Control Rate by powers of 2, but I found that increasing
-the Control Rate can result in a load click whenever notes go silent. Setting the Control Rate to 256 seemed to be the best
-compromise between MIDI speed and fidelity.
-
-  I hope to eventually build this into a full enclosure, complete with push-buttons to change the duty cycles, knobs for
-ADSR controls, and a preamp. But for now, the code is designed for simple MIDI-in and audio out circuitry.
 
 # Special Thanks
 Special thanks to trash80 for their inspiring mGB and ArduinoBoy projects and to Adventure Kid for their NES waveforms.
