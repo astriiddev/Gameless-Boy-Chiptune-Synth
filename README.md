@@ -36,8 +36,8 @@ that's built into my Keystep 37, I can't go any faster than 32nd triplet notes a
 While that should be plenty fast for most arpeggios and sequences, it also applies to rapidly changing CC knobs. The Duty
 Cycle control change must be turned smoothly, too fast and it won't register the value change and will just stay on the duty
 cycle that it was already set on. This can be fixed by increasing the Control Rate by powers of 2, but I found that increasing
-the Control Rate can result in unstable audio, especially in polyphony mode. Setting the Control Rate to 256 seemed to be the
-best compromise.
+the Control Rate can result in a load click whenever notes go silent. Setting the Control Rate to 256 seemed to be the best
+compromise between MIDI speed and fidelity.
 
   I hope to eventually build this into a full enclosure, complete with push-buttons to change the duty cycles, knobs for
 ADSR controls, and a preamp. But for now, the code is designed for simple MIDI-in and audio out circuitry.
