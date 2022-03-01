@@ -3,9 +3,9 @@ MIDI Controlled wavetable synth based around NES wavetables for Arduino UNO
 
   Inspired by trash80's mGB for arduinoboy and using Adventure Kid's NES wavetables, I decided to create a standalone
 chiptune synthesizer with an Arduino UNO. When I set out to begin this project, I had neither a gameboy nor an everdrive
-to run LSDJ or mGB so I wanted to build this to supplement my lack of gear. Now, over a year later, even though I now
-have both an everdrive and quite a few gameboys, I still wanted a standalone chiptune synth that was lowcost and compact
-and so I decided to finish the project I had started.
+to run LSDJ or mGB so I wanted to build this to supplant my lack of gear. Now, over a year later, even though I now have
+both an everdrive and quite a few gameboys, I still wanted a standalone chiptune synth that was lowcost and compact and
+so I decided to finish the project I had started.
 
   As the ArduiNES is inspired by mGB, I decided to keep the MIDI channel layout the same. MIDI channels 1 and 2 are both 
 pulse wave channels with varialbe pulse width. These pulse waves can be set to 12.5%, 25%, 50% (square wave--default on
@@ -45,5 +45,5 @@ ADSR controls, and a preamp. But for now, the code is designed for simple MIDI-i
 # Special Thanks
 Special thanks to thrash80 for their inspiring mGB and ArduinoBoy projects and to Adventure Kid for their NES waveforms.
 
-Also special thanks to jidagraphy for their Mozzi Polyphonic Synth code which helped me create the three note polyphony
-channel within the Mozzi library. Without them, this project could not have been realized.
+Also special thanks to jidagraphy for their Mozzi Poly Synth code which helped me create the three note polyphony channel 
+within the context of the Mozzi library. Without them, this project could not have been realized.
